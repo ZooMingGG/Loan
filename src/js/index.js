@@ -1,5 +1,8 @@
 'use strict';
+import Slider from './modules/slider';
 
 window.addEventListener('DOMContentLoaded', () => {
-    alert(1); 
+    const slider = new Slider('.page', '.next');
+
+    slider.render();
 });
