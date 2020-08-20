@@ -3,7 +3,7 @@ import MainSlider from './modules/slider/MainSlider';
 import MiniSlider from './modules/slider/MiniSlider';
 import Difference from './modules/Difference';
 import VideoPlayer from './modules/VideoPlayer';
-
+import Form from './modules/Form';
 
 window.addEventListener('DOMContentLoaded', () => {
     const mainSlider = new MainSlider({btns: '.next', container: '.page'});
@@ -41,4 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const difference = new Difference('.officerold', '.officernew', '.officer__card-item');
     difference.init();
+
+    const form = new Form('.form');
+    form.init();
 });
