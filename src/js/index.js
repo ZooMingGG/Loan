@@ -5,6 +5,7 @@ import Difference from './modules/Difference';
 import VideoPlayer from './modules/VideoPlayer';
 import Form from './modules/Form';
 import ShowInfo from './modules/ShowInfo';
+import Download from './modules/Download';
 
 window.addEventListener('DOMContentLoaded', () => {
     const mainSlider = new MainSlider({btns: '.next', container: '.page'});
@@ -51,4 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const showModalsInfo = new ShowInfo('.plus__content');
     showModalsInfo.init();
+
+    const downloadModalsInfo = new Download('.download');
+    downloadModalsInfo.init();
 });
