@@ -4,6 +4,7 @@ import MiniSlider from './modules/slider/MiniSlider';
 import Difference from './modules/Difference';
 import VideoPlayer from './modules/VideoPlayer';
 import Form from './modules/Form';
+import ShowInfo from './modules/ShowInfo';
 
 window.addEventListener('DOMContentLoaded', () => {
     const mainSlider = new MainSlider({btns: '.next', container: '.page'});
@@ -47,4 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const form = new Form('.form');
     form.init();
+
+    const showModalsInfo = new ShowInfo('.plus__content');
+    showModalsInfo.init();
 });
